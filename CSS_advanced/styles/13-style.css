@@ -42,12 +42,9 @@ body {
     line-height: var(--line-height-base);
 }
 
-a {
+a[href] {
     color: var(--text-color);
     text-decoration: none;
-}
-a[href] {
-
 }
 
 a[href]:visited {
@@ -59,7 +56,7 @@ a[href]:hover {
 }
 
 a[href]:active {
-    color: var(--color-light-grey);
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
