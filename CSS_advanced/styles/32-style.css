@@ -458,8 +458,8 @@ a:active {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
     background-color: var(--button-hover-background);
-    transition: var(--transition-duration);
-    transition-property: color, background-color;
+    transition-duration: var(--transition-duration);
+	transition-property: color, background-color;
 }
 
 .visually-hidden {
@@ -690,7 +690,6 @@ ul.row {
 .card-work .card-outer {
     position: relative;
     overflow: hidden;
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-image img {
@@ -698,7 +697,6 @@ ul.row {
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
@@ -738,16 +736,16 @@ ul.row {
     content: "";
 }
 
-.card-work:hover .card-title {
-    opacity: 1;
-}
-
-.card-work:hover .card-image img {
-    transform: scale(1.2);
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
+.card-work:hover .card-image {
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
+	transform: scale(1.2);
 }
 
 .card-work:hover .card-outer {
-    transform: scale(0.95);
+	transition: var(--transition-duration) var(--transition-cubic-bezier);
+	transform: scale(0.95);
 }
 
+.card-work:hover .card-title {
+    opacity: 1;
+}
