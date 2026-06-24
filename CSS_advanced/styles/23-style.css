@@ -544,7 +544,7 @@ ul.row {
 }
 
 .social-link svg {
-    color: var(--text-color)
+    fill: currentColor;
 }
 
 .footer ul {
